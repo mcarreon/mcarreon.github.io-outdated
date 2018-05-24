@@ -1,24 +1,15 @@
-@font-face {
-    font-family: marvinVis;
-    src: url(../fonts/marvinvisions-bold.woff)
-} 
-
-@keyframes colorChange {
-    from {color: black;}
-    to {color: #96C6E4;}
-}
-
-@keyframes fadein {
-    from {opacity: 0;}
-    to   {opacity: 1;}
-}
-
 body {
     background-image: url(../images/crossword.png);
     color: #4B4B4B;
     font-family: serif;
 }
 
+p { 
+    height: auto;
+    overflow: auto;
+    position: relative;
+    
+}
 header {
     font-family: marvinVis;
 }
@@ -32,12 +23,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-family: marvinVis;
 }
 
 section {
     position: absolute;
     width: 50vw;
     margin: 30px 25% 30px 25%;
+    height: auto;
 }
 
 ul {
@@ -64,10 +57,41 @@ ul {
 }
 
 #copyright {
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     margin-bottom: 8px;
+    margin-left: 10px;
     color: rgba(152, 152, 152, .3);
+}
+
+.control {
+    height: 71.9vh;
+    font-size: 1.5em;
+    width: 22vw;
+    color: rgba(177,176,99,1);  
+}
+
+.control:link {
+    color: rgba(177,176,99,1); 
+}
+
+.control:visited {
+    color: rgba(177,176,99,1);  
+}
+
+.control:hover{
+    opacity: 0;
+}
+
+.controlText:active {
+    color: rgba(177,176,99,1); 
+}
+
+.controlText{
+    position: fixed;
+    top: 50vh;
+    font-family: marvinVis;
+    
 }
 
 .carousel-indicators{
@@ -75,8 +99,16 @@ ul {
     bottom: -7vh;
 }
 
+.carousel-indicators .active {
+    background-color: rgba(177,176,99,1); 
+}
+
 .carousel-indicators li {
-    background-color: black;
+    background-color: rgba(177,176,99,.1);
+}
+
+.carousel-inner {
+    height: 50vh;
 }
 
 .contentLi {
@@ -85,6 +117,18 @@ ul {
     color: rgba(152, 152, 152, 0.54);
     margin: -4px 15px 5px 0px;
 }
+
+.entry {
+    color: black;
+    font-family: marvinVis;
+    bottom: -11vh;
+    right: -68vh;
+    font-size: 1em;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
 .separator {
     border-right: 2px solid rgba(152, 152, 152, 0.2);
     padding-right: 15px;
@@ -95,10 +139,9 @@ ul {
 
 .postContent {
     clear: both;
-    overflow: hidden;
     padding-top: 4px;
     font-size: 20px;
-    line-height: 34px;
+    line-height: 34px;  
 }
 
 .fadeIn {
@@ -108,4 +151,30 @@ ul {
     animation-fill-mode: forwards;
 }
 
+.fadeLong {
+    opacity: 0;
+    animation-name: fadeLong;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
 
+@font-face {
+    font-family: marvinVis;
+    src: url(../fonts/marvinvisions-bold.woff)
+} 
+
+@keyframes colorChange {
+    from {color: black;}
+    to {color: #96C6E4;}
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+
+@keyframes fadeLong {
+    from {opacity: 0; visibility: hidden;}
+    to {opacity: .2; visibility: visible;}
+}
