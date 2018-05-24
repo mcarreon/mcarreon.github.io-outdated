@@ -1,0 +1,83 @@
+@font-face {
+    font-family: marvinVis;
+    src: url(../fonts/marvinvisions-bold.woff)
+} 
+
+@keyframes colorChange {
+    from {color: black;}
+    to {color: #96C6E4;}
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+
+body {
+    background-image: url(../images/crossword.png);
+    color: #4B4B4B;
+}
+
+header {
+    font-family: marvinVis;
+}
+
+section {
+    position: absolute;
+    width: 50vw;
+    margin: 30px 25% 30px 25%;
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+ul {
+    list-style-type: none;
+    display: block;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 0;
+}
+
+li {
+    float: left;
+    font-size: 16px;
+    color: rgba(152, 152, 152, 0.54);
+    margin: 30px 17px 5px 0px;
+}
+
+#blogTitle {
+    font-size: 185px;
+    text-align: center;
+    color: black;
+    animation-name: colorChange; 
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+#blogSplash {
+    text-align: center;
+    font-size: 24px;
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.separator {
+    border-right: 2px solid rgba(152, 152, 152, 0.2);
+    padding-right: 15px;
+}
+.postName {
+    font-size: 40px;
+}
+
+.postContent {
+    clear: both;
+    overflow: hidden;
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 34px;
+}
