@@ -111,16 +111,12 @@ ul {
 }
 
 .carousel-inner {
+    max-height: 1600px;
     overflow: hidden;
-    transition: 1s linear;
 }
 
 .carousel-fade .carousel-item {
     transition-duration: 2s;
-}
-
-.carousel-inner>.active {
-    width: 100%;
 }
 
 .contentLi {

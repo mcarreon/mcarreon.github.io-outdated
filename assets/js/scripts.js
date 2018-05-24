@@ -1,4 +1,3 @@
-$(document).ready(function() {
-    jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 5000  // 2 seconds
-  });
-
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
