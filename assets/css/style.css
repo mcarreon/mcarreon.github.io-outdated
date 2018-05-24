@@ -1,7 +1,9 @@
 body {
     background-image: url(../images/crossword.png);
-    color: #4B4B4B;
-    font-family: serif;
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 p { 
@@ -29,7 +31,7 @@ footer {
 section {
     position: absolute;
     width: 50vw;
-    margin: 30px 25% 30px 25%;
+    margin: 30px 25% 0px 25%;
     height: auto;
 }
 
@@ -42,7 +44,7 @@ ul {
 }
 
 #blogTitle {
-    font-size: 185px;
+    font-size: 11.391em;
     text-align: center;
     color: black;
     animation-name: colorChange; 
@@ -95,8 +97,9 @@ ul {
 }
 
 .carousel-indicators{
-    position: relative;
-    bottom: -7vh;
+    bottom: -12vh;
+    margin-bottom: 10vh;
+    clear: both;
 }
 
 .carousel-indicators .active {
@@ -108,11 +111,14 @@ ul {
 }
 
 .carousel-inner {
-    height: 50vh;
+    max-height: 1600px;
+    transition: all .4s ease;
+    overflow: hidden;
 }
 
 .contentLi {
     float: left;
+    letter-spacing: 2px;
     font-size: 16px;
     color: rgba(152, 152, 152, 0.54);
     margin: -4px 15px 5px 0px;
@@ -133,8 +139,8 @@ ul {
     border-right: 2px solid rgba(152, 152, 152, 0.2);
     padding-right: 15px;
 }
-.postName {
-    font-size: 40px;
+.blogPostName {
+    font-size: 2.25em;
 }
 
 .postContent {
@@ -142,6 +148,8 @@ ul {
     padding-top: 4px;
     font-size: 20px;
     line-height: 34px;  
+    font-weight: 450;
+    font-size: 1.25em;
 }
 
 .fadeIn {
