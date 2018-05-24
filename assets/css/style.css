@@ -16,10 +16,16 @@
 body {
     background-image: url(../images/crossword.png);
     color: #4B4B4B;
+    font-family: serif;
 }
 
 header {
     font-family: marvinVis;
+}
+
+h1 {
+    font-size: 1.05em;
+    margin: 0;
 }
 
 footer {
@@ -40,13 +46,6 @@ ul {
     font-weight: bolder;
     font-size: 16px;
     padding: 0;
-}
-
-li {
-    float: left;
-    font-size: 16px;
-    color: rgba(152, 152, 152, 0.54);
-    margin: 30px 17px 5px 0px;
 }
 
 #blogTitle {
@@ -71,6 +70,21 @@ li {
     color: rgba(152, 152, 152, .3);
 }
 
+.carousel-indicators{
+    position: relative;
+    bottom: -7vh;
+}
+
+.carousel-indicators li {
+    background-color: black;
+}
+
+.contentLi {
+    float: left;
+    font-size: 16px;
+    color: rgba(152, 152, 152, 0.54);
+    margin: -4px 15px 5px 0px;
+}
 .separator {
     border-right: 2px solid rgba(152, 152, 152, 0.2);
     padding-right: 15px;
@@ -82,7 +96,7 @@ li {
 .postContent {
     clear: both;
     overflow: hidden;
-    padding-top: 20px;
+    padding-top: 4px;
     font-size: 20px;
     line-height: 34px;
 }
