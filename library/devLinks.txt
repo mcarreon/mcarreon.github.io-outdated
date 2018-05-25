@@ -1,0 +1,28 @@
+VS Code:
+
+https://vscodecandothat.com/
+
+cheat sheets:
+https://docs.emmet.io/cheat-sheet/
+
+Helpful Dev Links: 
+
+frameworks:
+https://materializecss.com/about.html
+
+icon library:
+https://useiconic.com/open
+
+font library:
+https://fonts.google.com/
+
+non-Lorem ipsum generators:
+http://idsgn.dropmark.com/107/1130454
+http://nietzsche-ipsum.com/
+http://lorizzle.nl/
+http://notloremipsum.com/
+
+coding games
+http://cssgridgraden.com
+http://cssflexbox.com
+
