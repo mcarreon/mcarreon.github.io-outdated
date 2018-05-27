@@ -18,6 +18,10 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-family: marvinVis;
+}
+
 footer {
   position: fixed;
   bottom: 0;

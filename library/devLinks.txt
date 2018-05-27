@@ -5,6 +5,13 @@ https://vscodecandothat.com/
 cheat sheets:
 https://docs.emmet.io/cheat-sheet/
 
+Languages:
+CSS 
+http://learnlayout.com/position.html
+
+Common Issues:
+http://bradfrost.com/blog/mobile/fixed-position/
+
 Helpful Dev Links: 
 
 what is this website made out of
