@@ -139,6 +139,11 @@ body {
     grid-column: 3;
   }
 
+#pulse {
+    color: #B43CCB;
+    animation: pulse .5s linear 4s forwards;
+}
+
 @font-face {
     font-family: marvinVis;
     src: url(../fonts/marvinvisions-bold.woff);
@@ -147,5 +152,28 @@ body {
 span {
     transition-duration: 2s;
 }
+
+.fadein {
+    opacity: 0;
+    animation: fadein 2s linear 2s forwards;
+}
+
+@keyframes pulse {
+    from {
+        color: #B43CCB; 
+    }
+    to {
+        color: #3B3B3B;
+    }
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 

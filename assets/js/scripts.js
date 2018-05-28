@@ -5,9 +5,17 @@ window.onbeforeunload = function () {
 $(function() {
     $('.navBar-1').hover(function() {
       $('#navBtn').css('color', '#B43CCB');
+      $('#about').css('color', '#B67AFF');
+      $('#portfolio').css('color', '#00BDFF');
+      $('#library').css('color', '#00FDFF');
+      $('#contact').css('color', '#00FFBD');
     }, function() {
       // on mouseout, reset the background colour
       $('#navBtn').css('color', '');
+      $('#about').css('color', '');
+      $('#portfolio').css('color', '');
+      $('#library').css('color', '');
+      $('#contact').css('color', '');
     });
   });
 
