@@ -1,0 +1,235 @@
+body {
+  background-image: url(../images/crossword.png);
+  color: black;
+  font-family: 'PT Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  z-index: 1;
+}
+
+p {
+}
+header {
+  font-family: marvinVis;
+}
+
+h1 {
+  font-size: 10vw;
+  margin: 0;
+}
+
+h2 {
+  font-family: marvinVis;
+  font-size: 2vw;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: marvinVis;
+}
+
+section {
+  width: 50vw;
+  margin: 0px 25% 0px 25%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  display: block;
+  font-weight: bolder;
+  font-size: 16px;
+  padding: 0;
+}
+
+#main {
+  margin-top: 30px;
+  height: 57vh;
+}
+
+#blogTitle {
+  font-size: 11.391em;
+  text-align: center;
+  color: black;
+  animation-name: colorChange;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#blogSplash {
+  text-align: center;
+  font-size: 24px;
+}
+
+#copyright {
+  text-align: right;
+  font-size: 14px;
+  margin-bottom: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgba(152, 152, 152, 0.3);
+}
+
+.control {
+  font-size: 1.5em;
+  width: 22vw;
+  color: rgba(177, 176, 99, 1);
+}
+
+.control:link {
+  color: rgba(177, 176, 99, 1);
+}
+
+.control:visited {
+  color: rgba(177, 176, 99, 1);
+}
+
+.control:hover {
+  opacity: 0;
+}
+
+.controlText:active {
+  color: rgba(177, 176, 99, 1);
+}
+
+.controlText {
+  position: fixed;
+  top: 50vh;
+  font-family: marvinVis;
+}
+
+.carousel-indicators {
+  bottom: -12vh;
+  margin-bottom: 5vh;
+  clear: both;
+}
+
+.carousel-indicators .active {
+  color: rgba(177, 176, 99, 0.5);
+  background-color: rgba(177, 176, 99, 0);
+}
+
+.carousel-indicators li {
+  color: rgba(177, 176, 99, 0.15);
+  margin-right: 5px;
+}
+
+.carousel-fade .carousel-item {
+  transition-duration: 0.5s;
+  height: 55vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.carousel-indicators li {
+  font-family: marvinVis;
+  letter-spacing: 1px;
+  text-indent: 0;
+  width: 70px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+.contentLi {
+  float: left;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: rgba(152, 152, 152, 0.54);
+  margin: -4px 15px 5px 0px;
+}
+
+.entry {
+  color: rgba(152, 152, 152, 0.8);
+  font-family: marvinVis;
+  font-size: 1em;
+}
+
+.separator {
+  border-right: 2px solid rgba(152, 152, 152, 0.2);
+  padding-right: 15px;
+}
+.blogPostName {
+  font-size: 2.25em;
+}
+
+.postContent {
+  clear: both;
+  padding-top: 4px;
+  padding-right: 20px;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 450;
+  font-size: 1.25em;
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadein 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.fadeLong {
+  opacity: 0;
+  animation-name: fadeLong;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.carousel-item::-webkit-scrollbar,
+.carousel-item::-webkit-scrollbar-track {
+  width: 1px;
+  background: rgba(152, 152, 152, 0);
+}
+
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-track {
+  width: 1px;
+  background: rgba(152, 152, 152, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(152, 152, 152, 0.15);
+}
+
+.carousel-item::-webkit-scrollbar-thumb {
+  background: rgba(152, 152, 152, 0.15);
+}
+
+@font-face {
+  font-family: marvinVis;
+  src: url(../fonts/marvinvisions-bold.woff);
+}
+
+@keyframes colorChange {
+  from {
+    color: black;
+  }
+  to {
+    color: #96c6e4;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeLong {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 0.2;
+    visibility: visible;
+  }
+}
