@@ -13,6 +13,7 @@ Common Issues:
 http://bradfrost.com/blog/mobile/fixed-position/
 
 Helpful Dev Links: 
+http://bradfrost.com/blog/mobile/fixed-position/ 
 
 what is this website made out of
 https://builtwith.com/

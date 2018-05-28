@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/panelStyle.css">
     
     <title>Marlo Carreon</title>
 </head>
@@ -16,7 +17,7 @@
     <div class="vl fadein"></div>
     <div class="container">
         <div class="navBar row-1 fadein">
-            <a href=""><i class="material-icons navBar-1 md-36">menu</i></a>
+            <a href="#"><i class="material-icons navBar-1 md-36" id="nav-btn">menu</i></a>
         </div>
         <div class="navText navText-1 row-1 fadein"><span id="pulse"><span id="navBtn">Where you go</span></span> under the baking sun the dry tall</div>
         <div></div>
@@ -26,7 +27,7 @@
         <div></div>
         
         <div class="navBar row-2 fadein">
-            <a href=""><i class="material-icons navBar-2 md-36">person</i></a>
+            <i class="material-icons navBar-2 md-36" id="about-btn">person</i>
         </div>
         <div class="navText navText-2 row-2 fadein"><span id="about">Who I am</span> grass still shivers with</span></div>
         <div></div>
@@ -36,7 +37,7 @@
         <div></div>
         
         <div class="navBar row-3 fadein">
-            <a href="oldIndex.html"><i class="material-icons navBar-3 md-36">dashboard</i></a>
+            <a href="oldIndex.html"><i class="material-icons navBar-3 md-36" id="portfolio-btn">dashboard</i></a>
         </div>
         <div class="navText navText-3 row-3 fadein"><span id="portfolio">What I do</span> the cool gentle breeze. burning</span></div>
         <div></div>
@@ -46,7 +47,7 @@
         <div></div>
         
         <div class="navBar row-4 fadein">
-            <a href=""><i class="material-icons navBar-4 md-36">chrome_reader_mode</i></a>
+            <a href="#"><i class="material-icons navBar-4 md-36" id="library-btn">chrome_reader_mode</i></a>
         </div>
         <div class="navText navText-4 row-4 fadein"><span id="library">What I read</span> the fallen leaves the warm winter</span></div>
         <div></div>
@@ -56,7 +57,7 @@
         <div></div>
         
         <div class="navBar row-5 fadein">
-            <a href=""><i class="material-icons navBar-5 md-36">contact_support</i></a>
+            <a href="#"><i class="material-icons navBar-5 md-36" id="contact-btn">contact_support</i></a>
         </div>
         <div class="navText navText-5 row-5 fadein"><span id="contact">Where to talk</span> day is a certainty... the splash-</span></div>
         <div></div>
@@ -73,6 +74,72 @@
         <div></div>
         <div></div>
     </div>
+    <div class="sidePanel" id="about-panel">
+        <div>icon</div>
+        <div class="panelContainer" >
+            <div class="row-1 col-1"></div>
+            <div class="row-1 col-2"></div>
+            
+            <div class="about-1 word-1 row-2 col-1">Who</div>
+            <div class="about-2 word-2 row-2 col-2"><span class="move">I Am</span></div>
+            
+            <div class="row-3 col=1"></div>
+            <div class="row-3 col-2"></div>
+            
+            <div class="about-border row-4 col=1"></div>
+            <div class="about-border row-4 col=2"></div>
+        </div>
+    </div>
+    <div class="sidePanel" id="portfolio-panel">
+        <div>icon</div>
+        <div class="panelContainer">
+            <div class="row-1 col-1"></div>
+            <div class="row-1 col-2"></div>
+
+            <div class="port-1 word-1 row-2 col-1">What</div>
+            <div class="port-2 word-2 row-2 col-2"><span class="move">I Do</span></div>
+            
+            <div class="row-3 col=1"></div>
+            <div class="row-3 col-2"></div>
+                
+            <div class="port-border row-4 col=1"></div>
+            <div class="port-border row-4 col=2"></div>
+        </div>
+    </div>
+    <div class="sidePanel" id="library-panel">
+        <div>icon</div>
+        <div class="panelContainer">
+            <div class="row-1 col-1"></div>
+            <div class="row-1 col-2"></div>
+                    
+            <div class="port-1 word-1 row-2 col-1">What</div>
+            <div class="port-2 word-2 row-2 col-2"><span class="move">I Read</span></div>
+                    
+            <div class="row-3 col=1"></div>
+            <div class="row-3 col-2"></div>
+                
+            <div class="library-border row-4 col=1"></div>
+            <div class="library-border row-4 col=2"></div>
+        </div>
+    </div>
+    <div class="sidePanel" id="contact-panel">
+        <div>icon</div>
+        <div class="panelContainer">
+            <div class="row-1 col-1"></div>
+            <div class="row-1 col-2"></div>
+            
+            <div class="port-1 word-1 row-2 col-1">Where</div>
+            <div class="port-2 word-2 row-2 col-2"><span class="move">To Talk</span></div>
+            
+            <div class="row-3 col=1"></div>
+            <div class="row-3 col-2"></div>
+            
+            <div class="contact-border row-4 col=1"></div>
+            <div class="contact-border row-4 col=2"></div>
+        </div>
+    </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="assets/js/scripts.js"></script>

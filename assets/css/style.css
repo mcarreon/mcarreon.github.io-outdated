@@ -176,4 +176,7 @@ span {
     }
   }
 
+  #about-btn {
+      direction: left;
+  }
 
