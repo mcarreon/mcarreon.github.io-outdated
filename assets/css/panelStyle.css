@@ -1,18 +1,18 @@
 .sidePanel {
     height: 100vh;
-    width: 44.35%;
-    min-width: 44.35%;
+    width: 851.66px;
+    
     position: fixed;
     right: 0px;
     top: 0px;
     bottom: 0px;
     background-color: #212121;
-    animation-duration: 4s;
+    
 }
 
 .panelContainer{
     display: grid;
-    grid-template-columns: 256px 336fr;
+    grid-template-columns: 256px 336px;
     grid-template-rows: 151px 41px 96px 47px;
     width: 592.5px;
     height: 335px;
@@ -23,6 +23,7 @@
 
 #about-panel {
     display: none;
+    animation: all 2s ease-in-out;
 }
 
 #portfolio-panel {
@@ -63,6 +64,12 @@
     white-space: nowrap;
 }
 
+.about-move {
+    position: relative;
+    top: -34px;
+    left: -3px;
+    white-space: nowrap;
+}
 .about-1 { color: #76E95A; }
 .about-2 { color: #ACEB9D; }
 .about-border { border-bottom: 40px solid #76E95A; }

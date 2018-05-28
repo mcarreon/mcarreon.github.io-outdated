@@ -59,14 +59,64 @@ $(function () {
 
 /* cover sliding panels */
 
-$(document).ready(function(){
-    
+$(document).ready(function () {
+
 
 
 });
 
-$("#about-btn").click(function(){
-    $("#about-panel").toggle('slide' , {
-        direction : 'right'
-    })
+$("#about-panel>.icon-panel").click(function () {
+    $("#about-panel").animate({
+        width: 'toggle'
+
+    }, 2500);
+});
+
+$("#portfolio-panel>.icon-panel").click(function () {
+    $("#portfolio-panel").animate({
+        width: 'toggle'
+
+    }, 2500);
+});
+
+$("#library-panel>.icon-panel").click(function () {
+    $("#library-panel").animate({
+        width: 'toggle'
+
+    }, 2500);
+});
+
+$("#contact-panel>.icon-panel").click(function () {
+    $("#contact-panel").animate({
+        width: 'toggle'
+
+    }, 2500);
+});
+
+$("#about-btn").click(function () {
+    $("#about-panel").animate({
+        width: 'toggle'
+
+    }, 2500);
+});
+
+$("#portfolio-btn").click(function () {
+    $("#portfolio-panel").animate({
+        width: 'toggle'
+
+    }, 2500);
+});
+
+$("#library-btn").click(function () {
+    $("#library-panel").animate({
+        width: 'toggle'
+
+    }, 2500);
+});
+
+$("#contact-btn").click(function () {
+    $("#contact-panel").animate({
+        width: 'toggle'
+
+    }, 2500);
 });
