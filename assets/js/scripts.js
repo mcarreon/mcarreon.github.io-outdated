@@ -2,6 +2,8 @@ window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
 
+/* handles blurring during toggle */
+
 /* covers hovering of text */
 
 $(function () {
@@ -70,6 +72,8 @@ $("#about-panel>.icon-panel").click(function () {
         width: 'toggle'
 
     }, 2500);
+    $("#blur-toggle").toggleClass('blur');
+    $("#blur-toggle").toggleClass('unblur');
 });
 
 $("#portfolio-panel>.icon-panel").click(function () {
@@ -77,6 +81,8 @@ $("#portfolio-panel>.icon-panel").click(function () {
         width: 'toggle'
 
     }, 2500);
+    $("#blur-toggle").toggleClass('blur');
+    $("#blur-toggle").toggleClass('unblur');
 });
 
 $("#library-panel>.icon-panel").click(function () {
@@ -84,39 +90,56 @@ $("#library-panel>.icon-panel").click(function () {
         width: 'toggle'
 
     }, 2500);
+    $("#blur-toggle").toggleClass('blur');
+    $("#blur-toggle").toggleClass('unblur');
 });
 
 $("#contact-panel>.icon-panel").click(function () {
     $("#contact-panel").animate({
         width: 'toggle'
 
-    }, 2500);
+    }, 2500); 
+    $("#blur-toggle").toggleClass('blur');
+    $("#blur-toggle").toggleClass('unblur');
 });
 
+
 $("#about-btn").click(function () {
+    $("#blur-toggle").removeClass('unblur');
     $("#about-panel").animate({
         width: 'toggle'
 
     }, 2500);
+    $("#blur-toggle").removeClass('unblur');
+    $("#blur-toggle").toggleClass('blur');
 });
 
 $("#portfolio-btn").click(function () {
+    $("#blur-toggle").removeClass('unblur');
     $("#portfolio-panel").animate({
         width: 'toggle'
 
     }, 2500);
+    $("#blur-toggle").removeClass('unblur');
+    $("#blur-toggle").toggleClass('blur');
 });
 
 $("#library-btn").click(function () {
+    $("#blur-toggle").removeClass('unblur');
     $("#library-panel").animate({
         width: 'toggle'
 
     }, 2500);
+    $("#blur-toggle").removeClass('unblur');
+    $("#blur-toggle").toggleClass('blur');
 });
 
 $("#contact-btn").click(function () {
+    $("#blur-toggle").removeClass('unblur');
     $("#contact-panel").animate({
         width: 'toggle'
 
     }, 2500);
+    $("#blur-toggle").removeClass('unblur');
+    $("#blur-toggle").toggleClass('blur');
 });

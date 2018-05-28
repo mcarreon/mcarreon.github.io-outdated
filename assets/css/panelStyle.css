@@ -1,7 +1,7 @@
 .sidePanel {
     height: 100vh;
     width: 851.66px;
-    
+    z-index: 3;
     position: fixed;
     right: 0px;
     top: 0px;
@@ -19,6 +19,44 @@
     margin: -10px 129.5px 60px 129.7px;
     font-family: marvinVis;
     font-size: 198px;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(0px);
+        transform: scale(1.0);
+        background-color:rgba(0,0,0,0);
+    }
+    100% {
+        transform: scale(1.05);
+        filter: blur(10px);
+        background-color:rgba(0,0,0,0.5);
+    }
+}
+
+@keyframes unblur {
+    0% {
+        filter: blur(10px);
+        transform: scale(1.05);
+        background-color:rgba(0,0,0,0.5);
+    }
+    50% {
+        transform: scale(1.00);
+    }
+    100% {
+        background-color:rgba(0,0,0,0);
+        filter: blur(0px);
+    }
+}
+
+.blur {
+    background-color:rgba(0,0,0,0.5);
+    filter: blur(0px);
+    animation: blur .4s forwards;
+}
+
+.unblur {
+    animation: unblur 1.5s;
 }
 
 #about-panel {
