@@ -67,13 +67,16 @@ $(document).ready(function () {
 
 });
 
-$("#about-panel>.icon-panel").click(function () {
+/*  deals with closing the panel */
+
+$("#about-panel>.icon-panel").click(function () {    
+    $("#blur-toggle").toggleClass('unblur');
+    $("#blur-toggle").toggleClass('blur');  
     $("#about-panel").animate({
         width: 'toggle'
 
     }, 2500);
-    $("#blur-toggle").toggleClass('blur');
-    $("#blur-toggle").toggleClass('unblur');
+    
 });
 
 $("#portfolio-panel>.icon-panel").click(function () {
@@ -103,6 +106,7 @@ $("#contact-panel>.icon-panel").click(function () {
     $("#blur-toggle").toggleClass('unblur');
 });
 
+/*  deals with opening the panel */
 
 $("#about-btn").click(function () {
     $("#blur-toggle").removeClass('unblur');
@@ -110,7 +114,6 @@ $("#about-btn").click(function () {
         width: 'toggle'
 
     }, 2500);
-    $("#blur-toggle").removeClass('unblur');
     $("#blur-toggle").toggleClass('blur');
 });
 
@@ -120,7 +123,6 @@ $("#portfolio-btn").click(function () {
         width: 'toggle'
 
     }, 2500);
-    $("#blur-toggle").removeClass('unblur');
     $("#blur-toggle").toggleClass('blur');
 });
 
@@ -130,12 +132,10 @@ $("#library-btn").click(function () {
         width: 'toggle'
 
     }, 2500);
-    $("#blur-toggle").removeClass('unblur');
     $("#blur-toggle").toggleClass('blur');
 });
 
 $("#contact-btn").click(function () {
-    $("#blur-toggle").removeClass('unblur');
     $("#contact-panel").animate({
         width: 'toggle'
 

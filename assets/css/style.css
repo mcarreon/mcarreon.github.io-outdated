@@ -35,25 +35,11 @@ body {
     padding-top: 3vh;
 }
 
-.navBar-1 {
-    color: #B43CCB; 
-}
-
-.navBar-2 {
-    color: #B67AFF; 
-}
-
-.navBar-3 {
-    color: #00BDFF; 
-}
-
-.navBar-4 {
-    color: #00FDFF; 
-}
-
-.navBar-5 {
-    color: #00FFBD; 
-}
+.navBar-1 { color: #B43CCB; }
+.navBar-2 { color: #B67AFF; }
+.navBar-3 { color: #00BDFF; }
+.navBar-4 { color: #00FDFF; }
+.navBar-5 { color: #00FFBD; }
 
 .md-36 {
     font-size: 36px;
@@ -149,7 +135,7 @@ body {
 
 #pulse {
     color: #B43CCB;
-    animation: pulse .5s linear 4s forwards;
+    animation: pulse .5s linear 2.1s forwards;
 }
 
 @font-face {
@@ -163,7 +149,7 @@ span {
 
 .fadein {
     opacity: 0;
-    animation: fadein 2s linear 2s forwards;
+    animation: fadein 1s linear 1.5s forwards;
 }
 
 @keyframes pulse {

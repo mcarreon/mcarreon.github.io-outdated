@@ -16,10 +16,22 @@
     grid-template-rows: 151px 41px 96px 47px;
     width: 592.5px;
     height: 335px;
-    margin: -10px 129.5px 60px 129.7px;
+    margin: -10px 129.5px 45px 129.7px;
     font-family: marvinVis;
     font-size: 198px;
 }
+
+.text-panel {
+    width: 592.5px;
+    height: auto;
+    margin: 44.5px 129.5px 60px 129.7px;
+    font-family: 'IBM Plex Serif', serif;
+    color: white;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+
 
 @keyframes blur {
     0% {
@@ -30,7 +42,7 @@
     100% {
         transform: scale(1.05);
         filter: blur(10px);
-        background-color:rgba(0,0,0,0.5);
+        background-color:#3B3B3B;;
     }
 }
 
@@ -38,30 +50,28 @@
     0% {
         filter: blur(10px);
         transform: scale(1.05);
-        background-color:rgba(0,0,0,0.5);
-    }
-    50% {
-        transform: scale(1.00);
+        background-color:#3B3B3B;;
     }
     100% {
+        transform: scale(1.00);
         background-color:rgba(0,0,0,0);
         filter: blur(0px);
     }
 }
 
 .blur {
-    background-color:rgba(0,0,0,0.5);
+    background-color:#3B3B3B;
     filter: blur(0px);
     animation: blur .4s forwards;
 }
 
 .unblur {
-    animation: unblur 1.5s;
+    animation: unblur .4s;
+    transition-delay: .4s;
 }
 
 #about-panel {
-    display: none;
-    animation: all 2s ease-in-out;
+    display: none; 
 }
 
 #portfolio-panel {
@@ -102,18 +112,42 @@
     white-space: nowrap;
 }
 
-.about-move {
-    position: relative;
-    top: -34px;
-    left: -3px;
-    white-space: nowrap;
-}
+.about-move { position: relative; top: -34px; left: -3px; white-space: nowrap; }
+.library-move { left: -145px; }
+.contact-move { left: -230px; }
+.contact-row-4 { width: 405px; }
+.contact-panel { margin-left: 100.7px; }
+
 .about-1 { color: #76E95A; }
 .about-2 { color: #ACEB9D; }
 .about-border { border-bottom: 40px solid #76E95A; }
+.about-rewind { color: #ACEB9D; font-size: 42px; margin: 10px 0px 0px 10px; }
 .port-1 { color: #FFDA00;}
 .port-2 { color: #FEE96F;}
 .port-border { border-bottom: 40px solid #FFDA00; }
+.port-rewind { color: #FFDA00; font-size: 42px; margin: 10px 0px 0px 10px; }
+.library-1 { color: #FF6600; }
+.library-2 { color: #FFAE78; }
+.library-border { border-bottom: 40px solid #FF6600; }
+.library-rewind { color: #FFAE78; font-size: 42px; margin: 10px 0px 0px 10px; }
+.contact-1 { color: #FF4848; }
+.contact-2 { color: #FB9797; }
+.contact-border { border-bottom: 40px solid #FF4848; }
+.contact-rewind { color: #FB9797; font-size: 42px; margin: 10px 0px 0px 10px; }
+
+.about-image { 
+    float: right; 
+    box-shadow: 5px 10px 1px #ACEB9D; 
+    margin-left: 15px; 
+    margin-bottom: 20px; 
+}
+.about-list {
+    display: inline-block;
+}
+.about-icons {
+    font-size: 50px;
+}
+
 
 
 @font-face {
