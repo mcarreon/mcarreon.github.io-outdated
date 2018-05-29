@@ -141,13 +141,12 @@
     margin-left: 15px; 
     margin-bottom: 20px; 
 }
-.about-list {
-    display: inline-block;
-}
-.about-icons {
-    font-size: 50px;
-}
-
+.about-list { display: inline-block; }
+.about-list-wrapper { margin-left: 320px; bottom: 40px; position: absolute; width: 280px; }
+.about-icons { font-size: 50px; margin-right: 20px;}
+.about-github { color: white; }
+.about-linkedin { color: #0077B5; }
+.about-twitch { color: #6441A4}
 
 
 @font-face {
