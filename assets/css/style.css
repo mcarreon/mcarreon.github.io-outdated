@@ -19,7 +19,7 @@ body {
 
 .vl {
     height: 100vh;
-    border-right: 2px solid #3B3B3B;
+    border-right: 2px solid rgba(59, 59, 59, 0.3);
     position: absolute;
     left: 54px;
 }
@@ -135,7 +135,7 @@ body {
 
 #pulse {
     color: #B43CCB;
-    animation: pulse .5s linear 2.1s forwards;
+    animation: pulse .5s linear 1.3s forwards;
 }
 
 @font-face {
@@ -149,7 +149,7 @@ span {
 
 .fadein {
     opacity: 0;
-    animation: fadein 1s linear 1.5s forwards;
+    animation: fadein 1s linear .7s forwards;
 }
 
 @keyframes pulse {

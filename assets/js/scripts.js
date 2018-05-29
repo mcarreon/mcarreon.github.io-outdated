@@ -71,45 +71,50 @@ $(document).ready(function () {
 
 $("#about-panel>.icon-panel").click(function () {    
     $("#blur-toggle").toggleClass('unblur');
-    $("#blur-toggle").toggleClass('blur');  
+    $("#blur-toggle").toggleClass('blur');
+    $(".about-rewind").toggleClass('flip-animation-rewind')  
     $("#about-panel").animate({
         width: 'toggle'
 
     }, 2500);
-    
 });
 
 $("#portfolio-panel>.icon-panel").click(function () {
+    $("#blur-toggle").toggleClass('unblur');
+    $("#blur-toggle").toggleClass('blur');
+    $(".port-rewind").toggleClass('flip-animation-rewind')  
     $("#portfolio-panel").animate({
         width: 'toggle'
 
     }, 2500);
-    $("#blur-toggle").toggleClass('blur');
-    $("#blur-toggle").toggleClass('unblur');
+
 });
 
 $("#library-panel>.icon-panel").click(function () {
+    $("#blur-toggle").toggleClass('unblur');
+    $("#blur-toggle").toggleClass('blur');
+    $(".library-rewind").toggleClass('flip-animation-rewind')  
     $("#library-panel").animate({
         width: 'toggle'
 
     }, 2500);
-    $("#blur-toggle").toggleClass('blur');
-    $("#blur-toggle").toggleClass('unblur');
 });
 
 $("#contact-panel>.icon-panel").click(function () {
+    $("#blur-toggle").toggleClass('unblur');
+    $("#blur-toggle").toggleClass('blur');
+    $(".contact-rewind").toggleClass('flip-animation-rewind')  
     $("#contact-panel").animate({
         width: 'toggle'
 
     }, 2500); 
-    $("#blur-toggle").toggleClass('blur');
-    $("#blur-toggle").toggleClass('unblur');
 });
 
 /*  deals with opening the panel */
 
 $("#about-btn").click(function () {
     $("#blur-toggle").removeClass('unblur');
+    $(".about-rewind").toggleClass('flip-animation-rewind')  
     $("#about-panel").animate({
         width: 'toggle'
 
@@ -119,6 +124,7 @@ $("#about-btn").click(function () {
 
 $("#portfolio-btn").click(function () {
     $("#blur-toggle").removeClass('unblur');
+    $(".port-rewind").toggleClass('flip-animation-rewind')  
     $("#portfolio-panel").animate({
         width: 'toggle'
 
@@ -128,6 +134,7 @@ $("#portfolio-btn").click(function () {
 
 $("#library-btn").click(function () {
     $("#blur-toggle").removeClass('unblur');
+    $(".library-rewind").toggleClass('flip-animation-rewind')  
     $("#library-panel").animate({
         width: 'toggle'
 
@@ -136,10 +143,11 @@ $("#library-btn").click(function () {
 });
 
 $("#contact-btn").click(function () {
+    $("#blur-toggle").removeClass('unblur');
+    $(".contact-rewind").toggleClass('flip-animation-rewind')  
     $("#contact-panel").animate({
         width: 'toggle'
 
     }, 2500);
-    $("#blur-toggle").removeClass('unblur');
     $("#blur-toggle").toggleClass('blur');
 });

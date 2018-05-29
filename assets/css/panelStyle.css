@@ -40,7 +40,7 @@
         background-color:rgba(0,0,0,0);
     }
     100% {
-        transform: scale(1.05);
+        transform: scale(1.07);
         filter: blur(10px);
         background-color:#3B3B3B;;
     }
@@ -49,7 +49,7 @@
 @keyframes unblur {
     0% {
         filter: blur(10px);
-        transform: scale(1.05);
+        transform: scale(1.07);
         background-color:#3B3B3B;;
     }
     100% {
@@ -147,7 +147,23 @@
 .about-github { color: white; }
 .about-linkedin { color: #0077B5; }
 .about-twitch { color: #6441A4}
+.portfolio-text { display: grid; grid-template-columns: 1.5fr 1fr; grid-column-gap: 30px; }
+.portfolio-pages { font-size: 18px; font-style: none; font-family: 'Fjalla One', sans-serif; letter-spacing: 2px;}
+.library-text { display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 30px; margin-top: 20px; }
+.library-pages { font-size: 18px; font-style: none; font-family: 'Fjalla One', sans-serif; letter-spacing: 2px; }
 
+.flip-rewind {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    transform-origin: 50% 50%;
+}
+
+.flip-animation-rewind {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
 
 @font-face {
     font-family: marvinVis;
