@@ -1,0 +1,6 @@
+Index Page:
+
+F - make sure its browser compatible
+F - port to laptop screen
+F - port to mobile 
+F - implement contact form
