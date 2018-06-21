@@ -1,0 +1,23 @@
+@media (max-height: 768px) {
+    .container {
+        grid-template-rows: 115px 115px 115px 115px 115px 115px;
+    }
+    .panelContainer {
+        grid-template-rows: 113px 31px 72px 35px;
+        font-size: 155px;
+        margin-bottom: 251px;
+        height: 10px;   
+    }
+    .text-panel {
+        margin-top: 20.5px; 
+        font-size: 15px;
+        width: 520.5px;
+    }
+    .about-image { margin-top: 20px; }
+    .about-list-wrapper { margin-left: 330px; }
+    .about-border { border-bottom-width: 25px; width: 265px; }
+    .port-border { border-bottom-width: 25px; width: 265px; }
+    .library-border { border-bottom-width: 25px; width: 235px; }
+    .library-border.row-4.col-1 { width: 256px; }
+    .contact-border { border-bottom-width: 25px; width: 268px; }
+}
